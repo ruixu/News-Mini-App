@@ -1,0 +1,13 @@
+<view class="news-detail">
+  <view class="title">{{newsInfo.title}}</view>
+  <view class="info-wrapper">
+     <view class="time">{{newsInfo.time}}</view> 
+    <view class="source">{{newsInfo.source}}</view>
+    <view class="count">阅读量 {{newsInfo.readCount}}</view>
+  </view>
+  <view class="content-wrapper">
+    <view class="item" wx:for="{{newsContent}}" wx:key='unique'>
+      <rich-text nodes="{{item}}"></rich-text>
+    </view>
+  </view>
+</view>

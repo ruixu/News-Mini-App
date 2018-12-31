@@ -1,0 +1,35 @@
+{
+	"description": "project config",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.6.4",
+	"appid": "wxe385ab987d070d33",
+	"projectname": "NewsApp",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": 0,
+					"name": "dev start on second page",
+					"pathName": "pages/news/news",
+					"query": ""
+				}
+			]
+		}
+	}
+}
