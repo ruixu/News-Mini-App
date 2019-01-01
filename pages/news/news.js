@@ -8,7 +8,7 @@ Page({
 
   onLoad(opt) {
     this.setData({
-      id: opt.id
+      id: opt.id,    
     })
     this.getDetail()
   },
@@ -22,7 +22,8 @@ Page({
       },
       success: res => {
         let newsInfo = res.data.result 
-        newsInfo.time = moment(newsInfo.date).format('MMMM Do YYYY, h:mm:ss'),
+        newsInfo.time = moment(newsInfo.date).format('MMMM Do YYYY, h:mm:ss'),                       
+        newsInfo.source = newsInfo.source || '快读资讯',     
         this.setData({
           newsInfo: newsInfo,
         })
@@ -72,7 +73,8 @@ Page({
   },
 
   onPullDownRefresh() {  
-    this.getArticle(() => {
+    console.log('news content page refresh!')
+    this.getDetail(() => {
       wx.stopPullDownRefresh()
     })
   },

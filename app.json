@@ -8,6 +8,6 @@
     "navigationBarBackgroundColor": "#10AEFF",
     "navigationBarTitleText": "快读.资讯",
     "navigationBarTextStyle": "white",
-    "enablePullDownRefresh": true
+    "enablePullDownRefresh": false
   }
 }

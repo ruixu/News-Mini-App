@@ -94,13 +94,14 @@ Page({
   },
 
   onTapNews(event) {
-    let newsID = event.currentTarget.dataset.newsid
+    let newsID = event.currentTarget.dataset.newsid  
     wx.navigateTo({
       url: '/pages/news/news?id=' + newsID
     })
   },
 
   onPullDownRefresh() {   
+    console.log('home page refresh!')
     this.getNews(() => {
       wx.stopPullDownRefresh()
     })
